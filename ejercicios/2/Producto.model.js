@@ -8,13 +8,13 @@ class Producto {
    * @param {number} Precio |Precio del producto
    * @param {number} Peso |Peso en gramos del producto
    */
-  constructor(Nombre, Precio, Peso) {
+  constructor(Nombre, Peso, Precio) {
     this._nombre = Nombre;
     this._precio = Precio;
     this._peso = Peso;
   }
   getResumen() {
-    return `${this._nombre} ${this._peso} $${this._precio}`;
+    return `${this._nombre} ${this._peso}g $${this._precio}`;
   }
 }
 
