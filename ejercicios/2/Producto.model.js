@@ -16,6 +16,10 @@ class Producto {
   getResumen() {
     return `${this._nombre} ${this._peso}g $${this._precio}`;
   }
+
+  getPrecio() {
+    return this._precio;
+  }
 }
 
 export default Producto;

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My website</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&display=swap");
+      body {
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-family: "Baloo Chettan 2", cursive;
+        font-weight: 100;
+      }
+      /*
+      Section Css
+      */
+      section {
+        text-align: center;
+      }
+      /*
+      HEADER
+      */
+      section.head {
+        height: calc((100vh / 10) * 1);
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 50px;
+      }
+      section.head span {
+        height: 35px;
+        width: 35px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 30px;
+        margin: auto;
+        background-color: gray;
+        border-radius: 50%;
+      }
+      section.head a {
+        color: white;
+        margin-left: 20px;
+        transition: 0.5s;
+      }
+      section.head a:hover {
+        cursor: pointer;
+        font-size: 20px;
+      }
+      /*
+      BODY
+      */
+      section#main {
+        height: calc((100vh / 10) * 6);
+        padding: 10px 20%;
+        color: white;
+      }
+      section#main h1 {
+        font-size: 80px;
+      }
+      section#main .carousel {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      section#main .carousel .card {
+        width: 150px;
+        height: 160px;
+        background-color: white;
+        box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.45);
+        border-radius: 7px;
+        transition: 0.5s;
+        overflow: hidden;
+      }
+      section#main .carousel .card:hover {
+        height: 165px;
+        width: 155px;
+        cursor: pointer;
+        box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.75);
+      }
+      section#main .carousel .card .title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        background-color: gray;
+        height: 50px;
+      }
+      /*
+      FOOTER
+      */
+      section.footer div {
+        display: flex;
+        justify-content: space-around;
+        overflow: hidden;
+      }
+      section.footer div ul {
+        list-style: none;
+      }
+      section.footer div ul strong {
+        font-weight: bolder;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="head" style="background-color: red;">
+      <span class="logo"></span>
+      <a>Home</a>
+      <a>Pricing</a>
+      <a>About</a>
+    </section>
+    <section id="main" style="background-color: blue;">
+      <h2>Body</h2>
+      <div class="carousel">
+        <div class="card">
+          <div class="title">Producto 1</div>
+          <div class="content"></div>
+        </div>
+        <div class="card">
+          <div class="title">Producto 2</div>
+          <div class="content"></div>
+        </div>
+        <div class="card">
+          <div class="title">Producto 3</div>
+          <div class="content"></div>
+        </div>
+      </div>
+    </section>
+    <section class="footer" style="background-color: green;">
+      <h2>Footer</h2>
+      <div class="summary">
+        <ul>
+          <li><strong>Summary 1</strong></li>
+          <li><strong>Summary 2</strong></li>
+          <li><strong>Summary 3</strong></li>
+        </ul>
+        <ul>
+          <li><strong>Summary right 1</strong></li>
+          <li><strong>Summary right 2</strong></li>
+          <li><strong>Summary right 3</strong></li>
+        </ul>
+      </div>
+    </section>
+  </body>
+</html>
